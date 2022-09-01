@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ab"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".TaskSearch.UploadSignature">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c4c9d6"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu"
+        app:title="Signature"
+        app:titleMargin="8dp"
+        app:titleTextColor="#000000" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="6"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <Spinner
+            android:id="@+id/spinnerStatusSignature"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attended By"
+                android:textStyle="bold"/>
+
+        <com.kyanogen.signatureview.SignatureView
+            xmlns:sign="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/signatureEdit"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1.5"
+            android:background="#ffffff"
+            sign:enableSignature="true"
+            android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:id="@+id/clearSign"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Checklist"
+                android:id="@+id/saveSign"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

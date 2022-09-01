@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ab"
+    tools:context=".GIS.GlobeActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_globe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c4c9d6"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="GIS"
+        app:titleMargin="8dp"
+        app:titleTextColor="#000000"
+        app:menu="@menu/menu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayoutGlobeTask">
+
+    <Spinner
+        android:id="@+id/spinner_zone_globe_activity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <Spinner
+        android:id="@+id/spinner_locaton_globe_activity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/spinner_zone_globe_activity"
+        app:layout_constraintRight_toRightOf="@id/spinner_zone_globe_activity"
+        app:layout_constraintTop_toBottomOf="@id/spinner_zone_globe_activity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Show Tasks"
+                android:background="@drawable/mybutton"
+                android:id="@+id/showTaskButton"
+                android:layout_margin="8dp"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Show Faults"
+                android:background="@drawable/mybutton"
+                android:id="@+id/showFaultButton"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+    <com.androidmapsextensions.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spinner_locaton_globe_activity"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toStartOf="@id/spinner_locaton_globe_activity"
+        app:layout_constraintEnd_toEndOf="@id/spinner_locaton_globe_activity"/>
+
+    </LinearLayout>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutGlobeFault"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spinner_zone_globe_activityFault"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <Spinner
+            android:id="@+id/spinner_locaton_globe_activityFault"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintLeft_toLeftOf="@id/spinner_zone_globe_activity"
+            app:layout_constraintRight_toRightOf="@id/spinner_zone_globe_activity"
+            app:layout_constraintTop_toBottomOf="@id/spinner_zone_globe_activity" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_viewFault"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_constraintTop_toBottomOf="@id/spinner_locaton_globe_activity"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintStart_toStartOf="@id/spinner_locaton_globe_activity"
+            app:layout_constraintEnd_toEndOf="@id/spinner_locaton_globe_activity"/>
+
+
+    </LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/rowsearcht"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/equpi_sing_id"
+        android:layout_width="match_parent"
+        android:hint="ID"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:id="@+id/equpi_sing_name"
+        android:layout_width="match_parent"
+        android:hint="Name"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:id="@+id/equpi_sing_code"
+        android:layout_width="match_parent"
+        android:hint="Code"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" />
+</LinearLayout>

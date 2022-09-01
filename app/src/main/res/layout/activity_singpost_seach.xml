@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/ab"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".singpost.SingpostSeachActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/equipmentsearchView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/mysearcht"
+        app:queryHint="Search Equipment" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/equipoment_recycler_singpost"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

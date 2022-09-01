@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ifarms</string>
+    <string name="admin">Username</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+
+</resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OcrDashboardItem.OcrActivity"
+    android:orientation="vertical"
+    android:background="@drawable/ab"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:showDividers="middle"
+    android:divider="?dividerHorizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ocr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c4c9d6"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Utility Reading"
+        app:menu="@menu/menu"
+        app:titleMargin="8dp"
+        app:titleTextColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="?dividerVertical"
+        android:showDividers="middle"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewOcr"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_camera"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_add_details"
+            android:id="@+id/buttonUploadManually"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayoutOcrManual"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:divider="?dividerHorizontal"
+        android:showDividers="middle"
+        android:padding="10dp">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectMeterSpinnerOcr"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextOcr"
+            android:inputType="number"
+            android:hint="Current reading"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Previous Reading"
+            android:id="@+id/previousReadingTextView"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Previous Reading Date"
+            android:id="@+id/previousReadingDateTextViewOcr"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Date of Reading"
+            android:id="@+id/DateReadingTextViewOcr"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            android:hint="Remarks"
+            android:id="@+id/remarksTextViewOcr"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/mybutton"
+        android:padding="10dp"
+        android:shadowColor="#c4c9d6"
+        android:textColor="#504949"
+        android:text="Create New Meter Reading"
+        android:id="@+id/readingButtonOcr"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/mybutton"
+            android:padding="10dp"
+            android:shadowColor="#c4c9d6"
+            android:textColor="#504949"
+            android:id="@+id/modifyButtonOcr"
+            android:text="Modify current reading"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/mybutton"
+            android:padding="10dp"
+            android:shadowColor="#c4c9d6"
+            android:textColor="#504949"
+            android:id="@+id/verifyButtonOcr"
+            android:text="Verify Value"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/imageViewOcrDynamic"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearOcrUploadImage"
+            android:padding="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/uploadedImageOcr"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Click on camera to insert picture and then press upload"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/mybutton"
+                android:padding="10dp"
+                android:shadowColor="#c4c9d6"
+                android:textColor="#504949"
+                android:text="Upload and Get Values"
+                android:id="@+id/getValuesButtonOcr"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/mybutton"
+                android:padding="10dp"
+                android:shadowColor="#c4c9d6"
+                android:textColor="#504949"
+                android:text="Reset"
+                android:id="@+id/resetButtonOcr"/>
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

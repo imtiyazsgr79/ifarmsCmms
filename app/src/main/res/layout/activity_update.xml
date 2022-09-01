@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ab"
+    android:orientation="vertical"
+    tools:context=".EquipmentQrCodeSearch.Update">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_globe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c4c9d6"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:menu="@menu/menu"
+        app:title="Update"
+        app:titleMargin="8dp"
+        app:titleTextColor="#000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tno_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:hint="Task no"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tno_frid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Shedule no"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tno_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Location"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tno_build"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Building"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tno_acm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tno_shedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tno_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:hint="Date"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/tno_completedby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:hint="completedBy"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/tno_completeddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="completedDate"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/tno_completedtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="completedTime"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/tno_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="remarks"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/tno_status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:inputType="text"
+            android:padding="2dp"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/tno_btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Update Task"
+            android:background="@drawable/mybutton"
+            android:shadowColor="#c4c9d6"
+            android:textColor="#504949" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

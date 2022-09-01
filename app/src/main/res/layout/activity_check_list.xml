@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskSearch.CheckListActivity"
+    android:orientation="vertical"
+    android:background="@drawable/ab">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/checlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c4c9d6"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Checklist"
+        app:titleMargin="8dp"
+        app:titleTextColor="#000000"
+        app:menu="@menu/menu"/>
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="12dp"
+        android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCheckList"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="30dp"
+        android:divider="?dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+    </LinearLayout>
+    <Button
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Save Filled Checklist"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/mybutton"
+        android:id="@+id/savechecklistButton"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

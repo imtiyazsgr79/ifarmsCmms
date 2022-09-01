@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "902074715471",
+    "firebase_url": "https://ifarms-cmms.firebaseio.com",
+    "project_id": "ifarms-cmms",
+    "storage_bucket": "ifarms-cmms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902074715471:android:6137753d7ad8734438893a",
+        "android_client_info": {
+          "package_name": "in.ifarms.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902074715471-ogn61j9iqoh69l4tgjlvkf79thqt9m7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.ifarms.com",
+            "certificate_hash": "5bbae1d4e4b6b90cf65f2552ec7498571b323383"
+          }
+        },
+        {
+          "client_id": "902074715471-kbq9m3ag2ksl9gh0p674866rggsms9er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF8xsAsfvrBRM5ePNvAHlek-mQrtzOEyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902074715471-kbq9m3ag2ksl9gh0p674866rggsms9er.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
